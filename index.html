@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Magical Disney Adventures</title>
+    <style>
+      body {
+        background-color: rgb(165, 7, 152);
+        
+      }
+    </style>
+  </head>
+
+  <header>
+    <h1 style="color:rgb(80, 255, 138); text-align: center">
+    Magical Disney Adventures!
+    </h1>
+  </header>
+  
+  <body>
+    <main>
+      <h1 style='color:grey; background-color:black; text-align: center'>Class 1 Lab</h1>
+        <p style='color:aqua; background-color:brown'>Have you ever been to a Disney Park?</p>
+        <p style='color:chartreuse; background-color:black; text-align: center'>Who is your favorite Disney character?</p>
+        <p style='color:yellow; background-color:brown; text-align: right'>Which disney park would you like to visit?</p>
+
+        <script>
+            
+            var name = prompt('What is your name?');
+            
+            console.log('This is the user\'s name: ' + name);
+            
+            var welcomeMessage = prompt('Hello '+ name +', have you ever been to a Disney Park?(yes or no)');
+            if (welcomeMessage === 'yes') {
+                (welcomeMessage = 'Fantastic, ' + name +'! ');
+            } else if (welcomeMessage === 'no') {
+                (welcomeMessage = name + ', there are many adventures to be had at Disney! ');
+            } else {
+                (welcomeMessage = name + ', Keep working on it, you\'ll get there one day! ');
+            }
+            
+            console.log('This is the answer to the welcomeMessage prompt: ' + welcomeMessage);
+            
+            var fav = prompt( welcomeMessage + 'Who is your favorite Star Wars character Yoda, Chewbacca, or R2D2? (pick one)');
+            if (fav = 'yoda') {
+                (fav = fav+ ' says "You will find only what you bring in." ');
+            } else if (fav = 'chewbacca') {
+                (fav = fav+ ' says "WWWWWWWGGGGHHHRRRRW." ');
+            } else if (fav = 'r2d2') {
+                (fav = fav+ ' says "BEEP, BLOOP, BLOP, BLEEP" ');
+            } else {
+              (fav + 'is a good choice! ');
+            }
+            
+            console.log('This is the answer to favorite character:' + fav);
+            
+            var park = prompt('Which disney parks would you like to visit, Anaheim, Orlando, Tokyo, Paris, Hong Kong, Shanghai or ALL OF THEM?');
+            if (park = 'anaheim') {
+                (park = 'Pilot your way to the Galaxy\'s Edge! ');
+            } else if (park = 'orlando') {
+                (park = 'Take your flight of passage! ');
+            } else if (park = 'tokyo') {
+                (park = 'Space Mountain Rocks! ');
+            }else if (park = 'paris') {
+                (park = 'Phantom Manor awaits you! ');
+            }else if (park = 'hong kong') {
+                (park = 'Welcome to the Mystic Manor! ');
+            }else if (park = 'shanghai') {
+                (park = 'Battle for the Sunken Treasure! ');
+            }else if (park = 'all') {
+                (park = 'Why choose one when you can try them all? ');
+            }else { 
+                (park = 'All our dreams can come true, if we have the courage to pursue them! - Walt Elias Disney');
+            }
+            
+            console.log('Which park would the user like to visit?: ' + park);
+            
+            var message = alert(welcomeMessage + park + fav);
+            
+            console.log('All of the responses from the user, name, welcomeMessage, fav, park: ' + name + welcomeMessage + fav + park);
+            
+            document.write('<h3>' + '<p>' + welcomeMessage + '</p>' + '<p>' + park + '<p/>' + '<p>' + fav + '</p>' + '</h3>');
+            
+            
+        </script>
+
+    </main>
+  </body>
+
+  <footer>
+    <p>
+      For more info regarding the parks please visit any of the Disney Park websites:
+    </p>
+    
+    <ul>
+      <li>
+        <a href="https://disneyland.disney.go.com/" target="_blank">
+          Disneyland - Anaheim, California
+        </a>
+      </li>
+
+      <li>
+        <a href="https://disneyworld.disney.go.com/" target="_blank">
+          Disney World - Orlando, Florida
+        </a>
+      </li>
+
+      <li>
+        <a href="https://www.tokyodisneyresort.jp/en/" target="_blank">
+          Tokyo Disney Resort - Tokyo, Japan
+        </a>
+      </li>
+
+      <li>
+        <a href="https://www.disneylandparis.com/en-us/" target="_blank">
+          Disneyland Paris - Paris, France
+        </a>
+      </li>
+
+      <li>
+        <a href="https://www.hongkongdisneyland.com/" target="_blank">
+          Hong Kong Disneyland - Hong Kong, China
+        </a>
+      </li>
+
+      <li>
+        <a href="https://www.shanghaidisneyresort.com/en/" target="_blank">
+          Shanghai Disney Resort - Shanghai, China
+        </a>
+      </li>
+    </ul>
+  </footer>
+</html>
+
